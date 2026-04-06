@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Leyva & Jossman | Estrellas emergentes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <div><i class="fas fa-microphone-alt" style="margin-right: 8px;"></i> Leyva & Jossman</div>
+        <div>
+            <a href="#about">Sobre</a>
+            <a href="#music">Música</a>
+            <a href="#gallery">Galería</a>
+            <a href="#team">Equipo</a>
+            <a href="#contact">Redes</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>LEYVA & JOSSMAN</h1>
+        <p>Reggaeton emergente desde Armenia, sonido único y sin fronteras</p>
+        <button onclick="document.getElementById('music').scrollIntoView({behavior:'smooth'})"><i
+                class="fas fa-play-circle" style="margin-right: 8px;"></i> Escuchar ahora</button>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">Sobre el proyecto</h2>
+        <p class="about">
+            <i class="fas fa-star" style="margin-right: 6px;"></i>
+            Leyva & Jossman son un dúo independiente que fusiona el reggaeton clásico con matices contemporáneos,
+            creando una identidad sonora que conecta con la calle y el sentimiento. Desde Armenia, Quindío,
+            buscan expandir su música a nivel global con honestidad lírica y beats envolventes.
+        </p>
+    </section>
+
+    <section id="music">
+        <h2 class="section-title">Música</h2>
+        <div class="song">
+            <h3><i class="fas fa-head-side-headphones"></i> Te Confieso</h3>
+            <div class="player">
+                <button class="play" aria-label="Reproducir"><i class="fas fa-play"></i></button>
+                <div class="progress">
+                    <div></div>
+                </div>
+            </div>
+            <div class="time-container">
+                <span class="current-time" id="currentTimeDisplay">0:00</span>
+                <span class="total-time" id="totalTimeDisplay">--:--</span>
+            </div>
+            <div class="visualizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="wave"></div>
+            <div class="lyrics" id="lyricsContainer">
+                <!-- Los p se generarán con JS -->
+            </div>
+            <audio src="images/te con fieso - Leyva Feat Jos-Man Master.mp3.mpeg"></audio>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 class="section-title">Galería</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/foto1.jpeg" alt="Estudio" loading="lazy">
+                <div class="overlay"><i class="fas fa-music"></i> Studio vibes</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/foto2.jpeg" alt="Grabación" loading="lazy">
+                <div class="overlay"><i class="fas fa-microphone"></i> Recording session</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/foto3.jpeg" alt="Backstage" loading="lazy">
+                <div class="overlay"><i class="fas fa-camera"></i> Behind the scenes</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2 class="section-title">Equipo</h2>
+        <div class="team">
+            <div class="member"><i class="fas fa-user-astronaut" style="font-size: 2rem; margin-bottom: 12px;"></i>
+                <h3>Leyva</h3>
+                <p>Artista / Compositor</p>
+            </div>
+            <div class="member"><i class="fas fa-user-ninja" style="font-size: 2rem; margin-bottom: 12px;"></i>
+                <h3>Sayko (Jossman)</h3>
+                <p>Artista / Productor</p>
+            </div>
+            <div class="member"><i class="fas fa-chart-line" style="font-size: 2rem; margin-bottom: 12px;"></i>
+                <h3>Daniel Laguna</h3>
+                <p>Marketing & Digital</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="social-section">
+        <h2 class="section-title">Redes Sociales</h2>
+        <div class="social-buttons-container">
+            <div class="social-dropdown" id="instagramDropdown">
+                <button class="social-dropdown-btn">
+                    <i class="fab fa-instagram"></i> Instagram
+                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="https://www.instagram.com/kevin__leyva28?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <i class="fab fa-instagram"></i> @leyva
+                    </a>
+                    <a href="https://www.instagram.com/_jossman10?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <i class="fab fa-instagram"></i> @jossman
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="https://www.instagram.com/_dl3126?igsh=MWFjaGVka2hyOXhodQ==" target="_blank">
+                        <i class="fab fa-instagram"></i> @Daniel_Laguna
+                    </a>
+                </div>
+            </div>
+
+            <div class="social-dropdown" id="tiktokDropdown">
+                <button class="social-dropdown-btn">
+                    <i class="fab fa-tiktok"></i> TikTok
+                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="https://tiktok.com/@leyvaoficial" target="_blank">
+                        <i class="fab fa-tiktok"></i> @leyvaoficial
+                    </a>
+                    <a href="https://tiktok.com/@jossmanmusic" target="_blank">
+                        <i class="fab fa-tiktok"></i> @jossmanmusic
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="https://tiktok.com/@leyva_jossman" target="_blank">
+                        <i class="fab fa-tiktok"></i> @leyva_jossman (Dúo)
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p style="margin-top: 1rem; opacity: 0.5; font-size: 0.8rem;">
+            <i class="fas fa-hand-pointer"></i> Haz clic en cada botón para ver todas las cuentas
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Leyva & Jossman · Todos los derechos reservados</p>
+        <p><i class="fas fa-headphones"></i> Hecho con pasión desde Armenia, Colombia</p>
+    </footer>
+
+    <div class="modal" id="modal">
+        <img id="modalImg" alt="Vista ampliada">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
